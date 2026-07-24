@@ -20,11 +20,11 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class OrderService {
-    private OrderRepository orderRepository;
-    private ProductRepository productRepository;
+    private final OrderRepository orderRepository;
+    private final ProductRepository productRepository;
 
     @Transactional
-    public Order creatOrder(OrderRequest orderRequest){
+    public Order createOrder(OrderRequest orderRequest){
         Order order = new Order();
         order.setCustomerName(orderRequest.getCustomerName());
         order.setCustomerEmail(orderRequest.getCustomerEmail());
@@ -42,7 +42,8 @@ public class OrderService {
             }
 
             // total price calculate
-            BigDecimal itemPrice = product.getPrice().multiply(BigDecimal.valueOf(itemRequest.getQuantity())); 
+            // BigDecimal itemPrice = product.getPrice().multiply(BigDecimal.valueOf(itemRequest.getQuantity())); 
+              BigDecimal itemPrice = BigDecimal.valueOf(product.getPrice()).multiply(BigDecimal.valueOf(itemRequest.getQuantity()));
             totalPrice = totalPrice.add(itemPrice);
 
             // update the product table with updated quantity
@@ -51,7 +52,7 @@ public class OrderService {
             productRepository.save(product);
 
             // builder pattern to make obj
-            OrderItem orderItem = OrderItem.builder().order(order).product(product).quantity(itemRequest.getQuantity()).priceAtPurchase(product.getPrice()).build();
+            OrderItem orderItem = OrderItem.builder().order(order).product(product).quantity(itemRequest.getQuantity()).priceAtPurchase(BigDecimal.valueOf(product.getPrice())).build();
 
             orderItems.add(orderItem);
 
