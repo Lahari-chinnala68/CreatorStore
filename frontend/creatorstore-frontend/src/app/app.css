@@ -1,9 +1,9 @@
 .title {
   text-align: center;
-  padding: 60px 20px;
-  background-color: #2575fc;
-  color: white;
-  margin-top:30px;
+  padding: 100px 0;
+  background: linear-gradient(180deg, #2C3A52 0%, #3B4A6B 100%);
+  color: #FFFFFF;
+  margin-top:10px;
 }
 
 .title h1 {
@@ -20,14 +20,17 @@
 .shop-btn {
   padding: 12px 28px;
   font-size: 1rem;
-  color: #2575fc;
-  background-color: white;
+  margin-top: 15px;
+  background: #2563eb;
+  color: white;
   border: none;
-  border-radius: 6px;
+  padding: 10px 22px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
+
 .shop-btn:hover {
-  background-color: #f0f0f0;
+ background: #EA580C;
 }

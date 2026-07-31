@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: white;
+  background-color:#1F2937;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 .logo {
-  color: #2575fc;
+  color: white;
 }
 
 .navbar ul {
@@ -21,10 +22,10 @@
 
 .navbar li {
   cursor: pointer;
-  color: #333;
+  color:white;
   transition: color 0.3s ease;
 }
 
 .navbar li:hover {
-  color: #2575fc;
+  color:#2563EB;
 }

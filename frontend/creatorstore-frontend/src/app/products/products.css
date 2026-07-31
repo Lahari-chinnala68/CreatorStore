@@ -40,10 +40,15 @@
     margin: 15px 0 10px;
 }
 
-.price {
-    color: #2563eb;
+.current-price {
+    color:black;
     font-size: 20px;
     font-weight: bold;
+}
+.old-price {
+    margin:5px;
+    text-decoration: line-through;
+    color: #9CA3AF;
 }
 
 .product-card button {

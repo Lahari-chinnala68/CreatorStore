@@ -4,13 +4,14 @@
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #222;
-  color: #ddd;
+  color:#212121;
 }
 
 .footer-section {
   flex: 1;
   min-width: 100px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .footer-section h3,
@@ -28,12 +29,12 @@
 .footer-section li {
   cursor: pointer;
   margin-bottom: 8px;
-  color: #bbb;
+  color: #ffffffc2;
   transition: color 0.3s ease;
 }
 
 .footer-section li:hover {
-  color: white;
+  color:white;
 }
 
 .footer-bottom {
@@ -43,5 +44,5 @@
   padding-top: 15px;
   margin-top: 10px;
   font-size: 0.9rem;
-  color: #999;
+  color:white;
 }
