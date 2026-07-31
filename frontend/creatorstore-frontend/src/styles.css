@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #CCD5AE;
+  --secondary: #E9EDC9;
+  --background: #FEFAE0;
+  --card: #FAEDCD;
+  --accent: #D4A373;
+  --text: #4A3F35;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+footer {
+    padding: 50px;
+    margin-top: 40px;
+}
+body{
+    background-color:var(--background);
+    color:var(--text);
+    font-family:'Poppins',sans-serif;
+}

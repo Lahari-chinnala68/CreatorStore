@@ -1,23 +1,30 @@
 .navbar {
-  background-color: #333;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+.logo {
+  color: #2575fc;
+}
+
+.navbar ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
+  padding: 0;
 }
 
-li {
+.navbar li {
   cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-li:hover {
-  color: orange;
+.navbar li:hover {
+  color: #2575fc;
 }
